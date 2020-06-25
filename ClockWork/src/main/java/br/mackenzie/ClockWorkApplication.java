@@ -1,5 +1,6 @@
 package br.mackenzie;
 
+import br.mackenzie.resources.WorkResource;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
@@ -23,7 +24,11 @@ public class ClockWorkApplication extends Application<ClockWorkConfiguration> {
     @Override
     public void run(final ClockWorkConfiguration configuration,
                     final Environment environment) {
-        // TODO: implement application
+    	//resources
+        WorkResource workResource = new WorkResource();
+        environment.jersey().register(workResource);
     }
+
+
 
 }
