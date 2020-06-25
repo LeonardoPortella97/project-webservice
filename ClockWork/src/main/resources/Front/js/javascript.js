@@ -1,37 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="style.css">
-
-    
-</head>
-
-<body>
-
-    <header class="header">
-        <a href="index.html"> ClockWork Mack </a>
-
-
-
-        <nav>
-            <ul class="menu">
-                <li> <a href="create.html"> Create </a></li>
-                <li> <a href="delete.html"> Delete </a></li>
-                <li> <a href="read.html"> Read </a></li>
-                <li> <a href="update.html"> Update </a></li>
-            </ul>
-        </nav>
-
-    </header>
-
-    <center><div class="grafico"> 
-        <h2><font face="Verdana"> Gráfico ilustrativo de horas trabalhadas no mês</font></h2>
-            <!-- Load d3.js -->
-        <script src="https://d3js.org/d3.v4.js"></script>
-
-        <!-- Create a div where the graph will take place -->
-        <div id="my_dataviz"></div>
-    
-            <script>
-        // set the dimensions and margins of the graph
+// set the dimensions and margins of the graph
         var margin = {top: 10, right: 30, bottom: 30, left: 60},
             width = 460 - margin.left - margin.right,
             height = 400 - margin.top - margin.bottom;
@@ -60,7 +27,7 @@
               .call(d3.axisBottom(x));
             // Add Y axis
             var y = d3.scaleLinear()
-              .domain( [0, 160])
+              .domain( [8000, 9200])
               .range([ height, 0 ]);
             svg.append("g")
               .call(d3.axisLeft(y));
@@ -86,18 +53,3 @@
                 .attr("r", 5)
                 .attr("fill", "brack")
         })
-        </script>
-        </div></center>
-    
-    <footer>
-        <div>
-        <h5>
-            <font face="Verdana">
-            LINGUAGUEM DE PROGRAMAÇÃO 2 - COPYRIGHT GUILHERME MAIOLI CANNALONGA E LEONARDO PORTELLA 
-                </font>
-        </h5>
-       </div>
-    </footer>
-
-
-</body></html>
