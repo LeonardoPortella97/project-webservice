@@ -1,0 +1,108 @@
+body, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.2rem;
+    font-family: Arial;
+    list-style: none;
+    
+    
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+a {
+    text-decoration: none;
+    color: white
+
+}
+
+.header    {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    
+}
+
+.menu {
+    display: flex
+}
+
+.menu li{
+    margin-left: 10px;
+
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
+
+article {
+    background-color: white;
+    text-align: center;
+    height: auto;
+    padding: 20px;
+}
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+}
+
+body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 80px auto 80px;
+
+}
+
+form {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+div > left  {
+
+    text-align: right;
+} 
+
+div > right  {
+
+    text-align: left;
+} 
+
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+}
+
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
