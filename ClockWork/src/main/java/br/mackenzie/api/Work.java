@@ -1,8 +1,9 @@
 package br.mackenzie.api;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class Work {
 	@JsonProperty
@@ -10,11 +11,11 @@ public class Work {
 	@JsonProperty
 	private String name;
 	@JsonProperty
-	private LocalDateTime date;
+	private Date date;
 	@JsonProperty
 	private double timeWorked;
 
-	public Work(int id, String name, LocalDateTime  date, double timeWorked) {
+	public Work(int id, String name, Date date, double timeWorked) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -30,7 +31,7 @@ public class Work {
 		return name;
 	}
 
-	public LocalDateTime getDate() {
+	public Date getDate() {
 		return date;
 	}
 

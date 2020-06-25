@@ -2,3 +2,10 @@ logging:
   level: INFO
   loggers:
     br.mackenzie: DEBUG
+
+database:
+  driverClass: org.h2.Driver
+  user: root
+  password: admin
+  url: jdbc:h2:~/test
+  validationQuery: "SELECT 1"

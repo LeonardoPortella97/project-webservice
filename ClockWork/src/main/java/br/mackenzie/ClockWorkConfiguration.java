@@ -1,10 +1,24 @@
 package br.mackenzie;
 
 import io.dropwizard.Configuration;
+import io.dropwizard.db.DataSourceFactory;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
-import org.hibernate.validator.constraints.*;
 import javax.validation.constraints.*;
 
 public class ClockWorkConfiguration extends Configuration {
-    // TODO: implement service configuration
+
+	@NotNull
+	@JsonProperty("database")
+	private DataSourceFactory database = new DataSourceFactory();
+
+	public void setDatabase(DataSourceFactory database) {
+		this.database = database;
+	}
+
+	public DataSourceFactory getDatabase() {
+		return database;
+	}
+	
+	
 }
